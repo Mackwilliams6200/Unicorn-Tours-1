@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST | Book Now</title>
+    <link rel="stylesheet" href="unicorn-images/style.css"/>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="/index.html#about">About</a></li>
+      <li><a href="/index.html#tours">Tours</a></li>
+      <li><strong>Book Now</strong></li>
+    </ul>
+  </nav>
+  <div class="header-wrapper background-dark">
+    <header class="wrapper center remove-last-margin">
+        
+        <img class="header-graphic" src="unicorn-images/unicorn.svg" alt="unicorn">
+        
+        <h1>Book Your Tour</h1>
+      <p class="lead center max-line-length">
+        Complete the booking form, and get ready for blast off!
+      </p>
+    </header>
+  </div>
+  <main>
+    <section class="wrapper center margin-v-lg">
+      <form action='/success' class='center max-line-length' method='POST' name='book-tour'><input type='hidden' name='form-name' value='book-tour' />
+        
+        <div class="form-field">
+          <label for="first_name">First Name</label>
+          <input type="text" id="first_name" name="first_name">
+        </div>
+        <div class="form-field">
+          <label for="last_name">Last Name</label>
+          <input type="text" id="last_name" name="last_name">
+        </div>
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div class="form-field">
+          <label for="tour">Tour</label>
+          <select name="tour" id="tour">
+            <option>Make a selection</option>
+            <option value="Mars">Mars</option>
+            <option value="Saturn">Saturn</option>
+            <option value="Pluto">Pluto</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <button type="submit" class="btn">Book My Tour</button>
+        </div>
+      </div>
+      </form>
+    </section>
+  </main>
+
+  <div class="background-black padding-v-md">
+    <footer class="wrapper center flexbox flexbox--aligncenter">
+      <div>
+        <img class="header-logo center" src="unicorn-images/logo.svg" alt="UST logo">
+  
+    </div>
+      <div>
+        <p class="clear-margins">© 2020 Unicorn Space Tours</p>
+      
+    </footer>
+  </div>
+</body>
+
+</html>
